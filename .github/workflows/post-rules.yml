@@ -12,7 +12,8 @@ jobs:
           curl -X POST -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "Welcome",
+              "title": "🍄 Welcome 🍄",
+              "description": "Welcome to the Women in STEM gaming channel. This channel is where we play all our cosy and non cosy games. There is but one rule and that is no men. Go to your relevant gaming channel to start!",
               "color": 16758465
             }]
           }' \
