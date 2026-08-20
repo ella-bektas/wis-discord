@@ -1,19 +1,17 @@
 name: Post Discord Image Card
-
 on:
   workflow_dispatch:
-
 jobs:
   send:
     runs-on: ubuntu-latest
     steps:
       - name: Send image card
         run: |
-          curl -X POST -H "Content-Type: application/json" \
+          curl -i -X POST -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
               "color": 16758465,
-              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/animal-crossing.png?v=2" }
+              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/welcome-divas.png?v=2" }
             }]
           }' \
-          ${{ secrets.DISCORD_ACNH_WEBHOOK }}
+          "${{ secrets.DISCORD_ACNH_WEBHOOK }}"
