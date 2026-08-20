@@ -1,0 +1,19 @@
+name: Post Discord Embed
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "Welcome",
+              "color": 16758465
+            }]
+          }' \
+          ${{ secrets.DISCORD_WELCIME_WEBHOOK }}
