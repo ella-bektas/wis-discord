@@ -13,7 +13,7 @@ jobs:
           -d '{
             "embeds": [{
               "color": 16758465,
-              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/Welcome%20divas.png" }
+              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/welcome-divas.png" }
             }]
           }' \
           ${{ secrets.DISCORD_WELCOME_WEBHOOK }}
