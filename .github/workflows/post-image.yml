@@ -16,4 +16,4 @@ jobs:
               "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/Welcome%20divas.png" }
             }]
           }' \
-          ${{ secrets.DISCORD_WELCIME_WEBHOOK }}
+          ${{ secrets.DISCORD_WELCOME_WEBHOOK }}
