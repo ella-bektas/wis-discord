@@ -11,7 +11,7 @@ jobs:
           -d '{
             "embeds": [{
               "color": 16758465,
-              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/welcome-divas.png?v=2" }
+              "image": { "url": "https://raw.githubusercontent.com/ella-bektas/wis-discord/main/animal-crossing.png" }
             }]
           }' \
           "${{ secrets.DISCORD_ACNH_WEBOOK }}"
